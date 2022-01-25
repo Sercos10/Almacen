@@ -7,5 +7,10 @@ public interface IStore {
     boolean updateDrink(String name, IDrink drink);
     boolean isFull();
     float howMuch();
-    Integer howMany(Integer type);
+    /**
+     *
+     * @param type of drink to be counted
+     * @return
+     */
+    Integer howMany(DrinkType type);
 }
